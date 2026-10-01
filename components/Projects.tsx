@@ -1,0 +1,3 @@
+"use client";
+import { useState } from "react"; import { Section } from "./ui"; import ProjectCard from "./ProjectCard"; import ProjectModal from "./ProjectModal"; import { projects } from "@/data/projects";
+export default function Projects() { const [active, setActive] = useState<number | null>(null); return <><Section id="projects" eyebrow="04 / Selected work" title="Featured Projects" subtitle="AI systems and software built around real business problems."><div className="projects-list">{projects.map((p, i) => <ProjectCard key={p.title} project={p} index={i} onOpen={() => setActive(i)} />)}</div></Section>{active !== null && <ProjectModal project={projects[active]} close={() => setActive(null)} />}</>; }

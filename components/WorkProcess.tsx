@@ -1,0 +1,3 @@
+import { Section } from "./ui";
+const steps = [["Understand","Understand the business problem and workflow."],["Design","Design the automation and technical architecture."],["Build","Build the AI, backend, integrations and interface."],["Test","Test edge cases, responses and reliability."],["Deploy","Deploy and monitor the production system."]];
+export default function WorkProcess() { return <Section id="process" eyebrow="06 / Process" title="From problem to production."><div className="process">{steps.map(([t,d], i) => <article key={t}><span>{String(i+1).padStart(2,"0")}</span><i /><h3>{t}</h3><p>{d}</p></article>)}</div></Section>; }

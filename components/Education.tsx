@@ -1,0 +1,2 @@
+import { Section } from "./ui"; import { GraduationCap } from "lucide-react";
+export default function Education() { return <Section id="education" eyebrow="07 / Education" title="Academic foundation" className="education"><div className="education-grid"><article><GraduationCap /><div><h3>Master of Computer Applications (MCA)</h3><p>SVGU</p></div></article><article><GraduationCap /><div><h3>Bachelor of Computer Applications (BCA)</h3><p>Monark University</p></div></article></div></Section>; }
