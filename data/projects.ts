@@ -12,7 +12,7 @@ export type Project = {
   learned: string;
   github: string;
   live: { label: string; url: string }[];
-  visual: "agent" | "document" | "voice" | "logistics" | "school" | "salon";
+  visual: "agent" | "document" | "voice" | "logistics" | "school" | "salon" | "dental";
 };
 
 export const projects: Project[] = [
@@ -111,5 +111,21 @@ export const projects: Project[] = [
     github: "https://github.com/yogita-06/beautysalon",
     live: [{ label: "Live Demo", url: "https://beautysalon-puce.vercel.app/" }],
     visual: "salon",
+  },
+  {
+    title: "SmileCraft Dental",
+    category: "Healthcare Website / Automation Demo",
+    description: "A modern dental clinic experience that helps patients explore treatments, request appointments and understand the path from first enquiry to personalized care.",
+    problem: "Dental patients need clear treatment information and a simple way to request care without navigating a confusing or outdated clinic website.",
+    solution: "A responsive, comfort-focused website combines treatment discovery, appointment preferences, emergency guidance, FAQs and a conceptual patient-communication workflow.",
+    architecture: "Treatment discovery → appointment request → clinic confirmation → consultation → treatment plan → follow-up",
+    features: ["Treatment catalogue", "Appointment request flow", "Preferred date and time selection", "Emergency care guidance", "Patient journey", "Dental FAQ", "Automation workflow concept", "Demo dental assistant"],
+    tech: ["Next.js", "React", "TypeScript", "Responsive Design", "Healthcare UX", "Workflow Automation"],
+    impact: "Demonstrates how a clinic can make care easier to understand while capturing structured appointment enquiries online.",
+    challenges: "Presenting useful healthcare information without implying diagnosis, confirmed availability or real patient outcomes in a portfolio demo.",
+    learned: "Healthcare experiences need careful language, visible operational boundaries and a direct route to qualified human care.",
+    github: "https://github.com/yogita-06/dentalclinic",
+    live: [{ label: "Live Demo", url: "https://dentalclinic-wheat.vercel.app/" }],
+    visual: "dental",
   },
 ];
